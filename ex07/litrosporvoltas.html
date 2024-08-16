@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de litros por voltas em circuito</title>
+</head>
+<body>
+    <script>
+        
+        let comprimento = parseFloat(prompt('Digite o comprimento da pista em metros: '))
+        let voltas = parseInt(prompt('Digite o número total de voltas: '))
+        let abast = parseInt(prompt('Quantas vezes deseja abastecer: '))
+        let consumo = parseFloat(prompt('Digite o consumo do carro em km/L: '))
+
+        
+        function calcularCombustivelMinimo(comprimentoPista, voltas, abastecimentos, consumo) {
+            let comprimentoPistaKm = comprimentoPista / 1000 // Convertendo metros para quilômetros
+            let voltasPorAbastecimento = voltas / abastecimentos // Calculando as voltas por abastecimento
+            let distanciaTotal = voltasPorAbastecimento * comprimentoPistaKm // Distância total até o primeiro reabastecimento
+            let combustivelNecessario = distanciaTotal / consumo // Calculando o combustível necessário
+
+            return combustivelNecessario
+        }
+
+        
+        let litrosNecessarios = calcularCombustivelMinimo(comprimento, voltas, abast, consumo)
+
+        document.write('O número mínimo de litros necessários para percorrer até o primeiro reabastecimento é: '+litrosNecessarios.toFixed(2)+ 'litros.')
+        console.log('O número mínimo de litros necessários para percorrer até o primeiro reabastecimento é: '+litrosNecessarios.toFixed(2)+ 'litros.')
+        alert('O número mínimo de litros necessários para percorrer até o primeiro reabastecimento é: '+litrosNecessarios.toFixed(2)+ 'litros.')
+
+    </script>
+</body>
+</html>

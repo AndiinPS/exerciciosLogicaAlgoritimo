@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de caixas de azuleijos</title>
+</head>
+<body>
+    <script>
+    
+    let comprimento = parseFloat(prompt('Digite o comprimento :'))
+    let largura = parseFloat(prompt('Digite a largura :'))
+    let altura = parseFloat(prompt('Digite a altura :'))
+
+    
+    let areaParede1 = comprimento * altura 
+    let areaParede2 = largura * altura 
+
+    
+    let areaTotalParedes = 2 * (areaParede1 + areaParede2)
+
+    
+    const areaPorCaixa = 1.5
+
+    
+    let quantidadeCaixas = Math.ceil(areaTotalParedes / areaPorCaixa)
+
+    
+    alert('Você precisará de ' + quantidadeCaixas + ' caixas de azulejos.')
+    document.write('Você precisará de ' + quantidadeCaixas + ' caixas de azulejos.')
+    console.log('Você precisará de ' + quantidadeCaixas + ' caixas de azulejos.')
+    </script>
+</body>
+</html>

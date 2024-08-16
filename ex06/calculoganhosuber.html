@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de ganhos motorista</title>
+</head>
+<body>
+    <script>
+        const combust = 4.87
+        let kmini = parseFloat(prompt('Digite o Km inicial: '))
+        let kmfim = parseFloat(prompt('Digite o km final: '))
+        let kmlitro = parseFloat(prompt('Digite quantos litros de combustível: '))
+        let ganhosdia = parseFloat(prompt('Digite o valor ganho no dia: '))
+
+        let distancia = kmfim - kmini
+        let mediaconsum = distancia / kmlitro
+
+        let custocomb = kmlitro * combust
+
+        let lucro = ganhosdia - custocomb
+
+        console.log('Média de consumo: ' + mediaconsum.toFixed(2) +  'km/l. \n' + 'Lucro líquido: R$ ' + lucro.toFixed(2))
+        document.write('Média de consumo: ' + mediaconsum.toFixed(2) + 'km/l. <br>' + 'Lucro líquido: R$ ' + lucro.toFixed(2))
+        alert('Média de consumo: ' + mediaconsum.toFixed(2) + 'km/l. \n' + 'Lucro líquido: R$ ' + lucro.toFixed(2))
+        
+    </script>
+</body>
+</html>
