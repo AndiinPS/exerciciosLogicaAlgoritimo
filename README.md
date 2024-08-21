@@ -1,4 +1,5 @@
-Simples - 1 ao 7 
+Lista de exercícios Simples - 1 ao 7 
+
 1) Escreva um programa para ler o raio de um círculo, calcular e escrever a sua área (Pi * (raio * raio)) 
 2) Escreva um programa para ler uma temperatura em graus Fahrenheit, calcular e escrever o valor correspondente em graus Celsius. (C = (F-32) * 5 / 9) 
 3) Escreva um programa para ler uma temperatura em graus Celsius, calcular e escrever o valor correspondente em graus Fahrenheit.  (F = (C × 9/5) + 32)
