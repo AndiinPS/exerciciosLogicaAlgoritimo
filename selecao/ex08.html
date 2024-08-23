@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação da idade de voto</title>
+</head>
+<body>
+    <script>
+        const anoatual = new Date().getFullYear();
+        let nasc = parseInt(prompt('Digite sua data de nascimento: '))
+        let idade = (anoatual - nasc )
+        if ( idade < 16 ) {
+            document.write('Não vota!')
+        } else {
+           document.write('Vota!')
+         }
+    
+    </script>
+        
+</body>
+</html>
+
+
+    
+
+    
+        
+    
+        
+
+
