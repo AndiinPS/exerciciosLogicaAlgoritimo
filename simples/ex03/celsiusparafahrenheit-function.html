@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter Celsius para Fahrenheit</title>
+</head>
+<body>
+    <script>
+        
+        let tcelsius = parseFloat(prompt('Digite a temperatura em Celsius:'))
+        
+        function converterCelsiusParaFahrenheit(celsius) {
+            return (celsius * 9/5) + 32
+        }
+
+        let fahrenheit = converterCelsiusParaFahrenheit(tcelsius)
+        
+        document.write('Temperatura em Fahrenheit é : ' , fahrenheit)
+    </script>
+</body>
+</html>
