@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo de lâmpadas para iluminar cômodo residêncial</title>
+</head>
+<body>
+    <script>
+        
+        let largura = parseFloat(prompt('Digite a largura : '))
+        let comprimento = parseFloat(prompt('Digite o comprimento : '))
+        let potenlamp = parseFloat(prompt('Qual a potência da lâmpada utilizada (em watts) : '))
+
+        function calcular(largura, comprimento, potenlamp) {
+            const watts = 18
+            let area = largura * comprimento
+            let totalwatts = area * watts
+            let lampadas = totalwatts / potenlamp
+            return lampadas
+        }
+
+        document.write('<br>Serão necessárias: ' , calcular(largura, comprimento, potenlamp)+ ' lâmpadas.' )  
+        console.log('<br>Serão necessárias: ' , calcular(largura, comprimento, potenlamp)+ ' lâmpadas.')          
+    </script>
+    
+</body>
+</html>

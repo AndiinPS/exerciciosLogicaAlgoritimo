@@ -12,9 +12,9 @@
         let valor2 = parseInt(prompt('Digite um segundo número: '))
         let valor3 = parseInt(prompt('Digite o ultimo número: '))
         let comparar = [valor1 , valor2 , valor3]
-        comparar.sort()
+        comparar.sort((a, b) => a - b)
         document.write(`${comparar}`)
-        </script>
+    </script>
 </body>
 </html>
         
