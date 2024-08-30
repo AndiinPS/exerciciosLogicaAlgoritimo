@@ -7,7 +7,7 @@
 </head>
 <body>
     <script>
-        let raio = prompt('Digite o valor do raio :')
+        let raio = parseFloat(prompt('Digite o valor do raio :'))
         
         function calculoAreaCirculo(valorRaio) {
             const PI = 3.14
@@ -17,8 +17,7 @@
         let area = calculoAreaCirculo(raio)
 
         document.write('Area do circulo é de : ' , area )
-        document.write('Area do circulo x2 é de : ', calculoAreaCirculo(raio*2))
-        document.write('Area do circulo é de : ' , calculoAreaCirculo(1000))
+        
     </script>
 </body>
 </html>
