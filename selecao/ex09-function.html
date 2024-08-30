@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculando o valor das maçãs</title>
+</head>
+<body>
+    <script>
+        
+        let compras = parseInt(prompt('Quantas maçãs foram compradas: '))
+
+        function calculando(compras = 0) {
+            const precoAteOnze = 0.30
+            const precoAteDoze = 0.25
+            
+            if (compras <= 11) {
+                return compras * precoAteOnze
+                
+            } else {
+                return compras * precoAteDoze
+                
+            }
+        }
+
+        let total = calculando(compras)
+        
+        document.write(`Total R$: ${total.toFixed(2)}` )
+
+
+    </script> 
+</body>
+</html>
