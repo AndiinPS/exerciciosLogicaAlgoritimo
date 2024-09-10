@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let maiorAltura = 0
+        let menorAltura = 9999999
+        let somaAlturaMulheres = 0
+        let quantidadeMulheres = 0
+        let quantidadeHomens = 0
+        let quantidadePessoas = 5 
+    
+        for (let pessoa = 1; pessoa <= quantidadePessoas; pessoa++) {
+            let altura = parseFloat(prompt('Digite sua altura :'))
+            let sexo = prompt('Qual seu sexo :')
+    
+                
+            if (altura > maiorAltura) {
+                maiorAltura = altura
+            }
+            if (altura < menorAltura) {
+                menorAltura = altura
+            }
+    
+            if (sexo === 'mulher') {
+                somaAlturaMulheres += altura
+                quantidadeMulheres++
+            } else if (sexo === 'homem') {
+                quantidadeHomens++
+            
+            }
+
+        }    
+
+        let mediaAlturaMulheres = somaAlturaMulheres / (quantidadePessoas - quantidadeHomens)
+    
+        document.write(`Maior altura: ${maiorAltura} <br>`)
+        document.write(`Menor altura: ${menorAltura} <br>`)
+        document.write(`Média de altura das mulheres: ${mediaAlturaMulheres.toFixed(2)} <br>`)
+        document.write(`Número de homens: ${quantidadeHomens}<br>`)
+    </script>
+    
+    
+</body>
+</html>
